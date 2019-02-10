@@ -1,0 +1,68 @@
+.popular-movies{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 20px;
+    color: #E3F4FC;
+    }
+    
+    
+.movie-image{
+width: 155px;
+max-width: 100%;
+height: 238px;
+}
+
+.movie-dashboard-title{
+margin: 10px 0 5px 5px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+line-height: 16px;
+font-size: 14px;
+color: #E6F7FF;
+}
+
+.rating{
+    position: absolute;
+    background-color: #01D277;
+    border-radius: 8px;
+    color: #fff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 14px;
+    font-size: 12px;
+    text-align: center;
+    left: 5px;
+    top:  5px;
+    z-index: 1;
+    padding: 5px;
+    
+}
+
+
+
+
+//     max-width: 100%;
+//     height: auto;
+// width: 155px;
+// max-width: 100%;
+// height: 238px;
+// }
+
+.movie-dashboard-title{
+margin: 10px 0 5px 5px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+line-height: 16px;
+font-size: 14px;
+color: #E6F7FF;
+max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+   // position: relative;
+   // display: inline-block;
+}

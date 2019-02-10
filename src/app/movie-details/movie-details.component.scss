@@ -1,0 +1,76 @@
+.header-image{
+    width: 100%;
+    height: 30%;
+}
+
+.back-arrow{
+    top: 35px;
+    left:24px;
+    position: absolute;
+}
+
+.movie-details {
+    font-family: Montserrat;
+    color: white;
+    padding: 0 26px 20px 25px;
+
+    .line{
+        border-bottom: 1px solid #0F303D;
+        margin: 20px 10px;
+    }
+    .title{
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .mov-poster-container{
+        width: 140px;
+        display: inline-block;
+        min-height: 140px;
+        position: relative;
+    }
+    .mov-detail-poster{
+        //position: absolute;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5), 0px 8px 16px rgba(0, 0, 0, 0.5), 0px 16px 32px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        //left: calc(50% - 140px/2 - 117px);
+       // top: calc(50% - 213px/2 - 241px);
+        width: 140px;
+        position: absolute;
+        top: -73px;
+        left: 12px;
+    }
+
+    .mov-duration{
+        font-style: normal;
+        font-weight: normal;
+        line-height: 21px;
+        font-size: 12px;
+    }
+    .movie-specs{
+        font-style: normal;
+        font-weight: normal;
+        line-height: 21px;
+        font-size: 12px;
+        display: block;
+        
+    }
+    .overview-heading{
+        font-style: normal;
+        font-weight: bold;
+        line-height: 24px;
+        font-size: 20px;
+        color: #E3F4FC;
+    }
+
+    .overview{
+        line-height: 24px;
+        font-size: 16px;
+        color: #9FBBC7;
+    }
+
+
+}
+
+

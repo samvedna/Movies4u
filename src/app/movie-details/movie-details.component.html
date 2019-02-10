@@ -1,0 +1,42 @@
+<header class="header">
+  <div class="row">
+    <div class="col-12">
+        <img class="back-arrow" (click)="backToDashboard()" src="../../assets/images/ic_arrow_back_white.png" alt="back-arrow">
+        <div>
+            <img class="header-image" src="{{moviesImagePath+movieDetailsObj.backdrop_path}}" alt="">
+          </div>
+    </div>
+  </div>
+
+</header> 
+<div class="container-fluid movie-details">
+  <div class="row">
+      <span class="col-4 mov-poster-container">
+          <img  src="{{moviesImagePath+movieDetailsObj.poster_path}}" alt="" class="mov-detail-poster">
+      </span>
+      <span class="col-8">
+          <label for="movieTitle" class="title">
+              {{movieDetailsObj.title}}
+          </label>
+          <span class="movie-specs">
+              <span> {{movieDetailsObj.release_date | date:'yyyy'}} . {{movieDetailsObj.vote_average * 10}}% User Score</span>
+          </span>
+          <span class="mov-duration">
+            {{movieDuration}}
+          </span>
+      </span>
+    
+  </div>
+  <div class="line"></div>
+
+  <div class="row">
+      <div class="overview-heading">
+          
+      </div>
+  </div>
+
+  <div class="row ">
+      <div class="overview-heading"> Overview</div>
+      <div class="overview">{{movieDetailsObj.overview}}</div>
+  </div>
+</div> 

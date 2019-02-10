@@ -1,0 +1,15 @@
+@import '../../styles/index.scss';
+
+.header{
+    height: 20%;
+    background: radial-gradient(312.01px at 53.46% -21.35%, rgba(5, 112, 172, 0.46) 0%, rgba(8, 27, 35, 0) 100%);
+}
+
+.search-wrapper {
+    position: absolute; 
+    bottom: -1rem;
+    @media (min-width: $sm-width) {
+        position: relative;
+        bottom: auto;
+    }
+}

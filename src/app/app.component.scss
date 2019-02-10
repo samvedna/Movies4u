@@ -1,0 +1,7 @@
+@import '../styles/index.scss';
+
+:host ::ng-deep .main-wrapper {
+  display: block;
+  max-width: $max-app-width;
+  margin: 0 auto;
+}

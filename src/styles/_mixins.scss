@@ -1,0 +1,4 @@
+// Mixins
+@mixin transition-all() {
+  transition: all 0.2s;
+}

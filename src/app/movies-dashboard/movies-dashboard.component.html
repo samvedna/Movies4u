@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <label for="popular-movies" class="popular-movies">
+        POPULAR MOVIES
+        </label>
+    </div>
+    <div class="col-12 d-flex justify-content-around flex-wrap">
+    
+    <ng-container *ngIf="!allMoviesObj; else apiComplete">
+      <h4 style="color: #fff">Loading...</h4>
+    </ng-container>
+    <ng-template #apiComplete>
+      <ng-container *ngIf="!allMoviesObj.length">
+        <h4 style="color: #fff">No results!</h4>
+      </ng-container>
+      <ng-container *ngIf="allMoviesObj.length">
+        <section class="m-1 position-relative"  *ngFor="let movie of allMoviesObj" (click)="navigateToMovieDetails(movie.id)"> 
+          <img class="movie-image" src="{{moviesImagePath+movie.poster_path}}" alt="" >
+          <span class="rating">{{movie.vote_average *10}}%</span>
+          <br/>
+          <span class="movie-dashboard-title">{{movie.title}}</span>
+          <div class="movie-dashboard-title">{{movie.release_date | date:'MMMM'}} {{movie.release_date | date:' yyyy'}}</div>
+        </section>
+      </ng-container>
+    </ng-template>
+    </div>
+  </div>
+</div>
